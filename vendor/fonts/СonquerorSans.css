@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'Conqueror Sans';
+    src: url('ConquerorSansBlack.woff2') format('woff2'),
+        url('ConquerorSansBlack.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Conqueror Sans';
+    src: url('ConquerorSansUltraLight-Italic.woff2') format('woff2'),
+        url('ConquerorSansUltraLight-Italic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Conqueror Sans';
+    src: url('ConquerorSansMedium-Italic.woff2') format('woff2'),
+        url('ConquerorSansMedium-Italic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Conqueror Sans';
+    src: url('ConquerorSansExtrabold-Italic.woff2') format('woff2'),
+        url('ConquerorSansExtrabold-Italic.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Conqueror Sans';
+    src: url('ConquerorSansLight-Italic.woff2') format('woff2'),
+        url('ConquerorSansLight-Italic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Conqueror Sans';
+    src: url('ConquerorSansBlack-Italic.woff2') format('woff2'),
+        url('ConquerorSansBlack-Italic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Conqueror Sans';
+    src: url('ConquerorSansSemiBold.woff2') format('woff2'),
+        url('ConquerorSansSemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Conqueror Sans';
+    src: url('ConquerorSans-Italic.woff2') format('woff2'),
+        url('ConquerorSans-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Conqueror Sans';
+    src: url('ConquerorSansExtraBold.woff2') format('woff2'),
+        url('ConquerorSansExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Conqueror Sans';
+    src: url('ConquerorSansThin-Italic.woff2') format('woff2'),
+        url('ConquerorSansThin-Italic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Conqueror Sans';
+    src: url('ConquerorSans-Bold.woff2') format('woff2'),
+        url('ConquerorSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Conqueror Sans';
+    src: url('ConquerorSansMedium.woff2') format('woff2'),
+        url('ConquerorSansMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Conqueror Sans';
+    src: url('ConquerorSansThin.woff2') format('woff2'),
+        url('ConquerorSansThin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Conqueror Sans';
+    src: url('ConquerorSansSemiBold-Italic.woff2') format('woff2'),
+        url('ConquerorSansSemiBold-Italic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Conqueror Sans';
+    src: url('ConquerorSans-BoldItalic.woff2') format('woff2'),
+        url('ConquerorSans-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Conqueror Sans';
+    src: url('ConquerorSans-UltraLight.woff2') format('woff2'),
+        url('ConquerorSans-UltraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Conqueror Sans';
+    src: url('ConquerorSansLight.woff2') format('woff2'),
+        url('ConquerorSansLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Conqueror Sans';
+    src: url('ConquerorSans.woff2') format('woff2'),
+        url('ConquerorSans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+

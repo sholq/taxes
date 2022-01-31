@@ -1,0 +1,25 @@
+.income__list {
+  width: 100%;
+  /* Позиционирование */
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(435px, -webkit-max-content));
+  grid-template-columns: repeat(auto-fit, minmax(435px, max-content));
+  grid-auto-rows: auto;
+  row-gap: 25px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  /* Стилизация */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 750px) {
+  .income__list {
+    -ms-grid-columns: repeat(auto-fit, minmax(275px, -webkit-max-content));
+    grid-template-columns: repeat(auto-fit, minmax(275px, -webkit-max-content));
+    grid-template-columns: repeat(auto-fit, minmax(275px, max-content));
+  }
+}

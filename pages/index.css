@@ -8,6 +8,7 @@
 @import url(../blocks/main/__taxes/main__taxes.css);
 @import url(../blocks/main/__social/main__social.css);
 @import url(../blocks/income/income.css);
+@import url(../blocks/income/__list/income__list.css);
 @import url(../blocks/container/container.css);
 @import url(../blocks/container/__title/container__title.css);
 @import url(../blocks/container/__title/_income/container__title_income.css);
@@ -22,6 +23,7 @@
 @import url(../blocks/output/_taxes/output_taxes.css);
 @import url(../blocks/output/__line/output__line.css);
 @import url(../blocks/taxes/taxes.css);
+@import url(../blocks/taxes/__list/taxes__list.css);
 @import url(../blocks/social/social.css);
 @import url(../blocks/social/__list/social__list.css);
 @import url(../blocks/social/__item/social__item.css);

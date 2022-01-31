@@ -4,4 +4,6 @@
   display: grid;
   -ms-grid-rows: auto 1fr;
   grid-template-rows: auto 1fr;
+  /* Стилизация */
+  
 }

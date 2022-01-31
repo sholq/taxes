@@ -14,39 +14,43 @@
 
     <main class="main">
       <section class="income main__income">
-        <div class="container">
-          <h2 class="container__title container__title_income">Ваша «чистая» зарплата — то, что приходит на карточку</h2>
-          <label class="input input_income">
-            <input class="input__line input__line_net-income" type="text" name="net-income" placeholder="30 000" value='' autocomplete="off">₽
-          </label>
-        </div>
-        <div class="container">
-          <h2 class="container__title container__title_income">Ваша зарплата до уплаты налогов и сборов</h2>
-          <label class="output output_income">
-            <output class="output__line output__line_gross-income" name="gross-income">54545</output>&nbsp;₽
-          </label>
-        </div>
+        <ul class="income__list">
+          <li class="container">
+            <h2 class="container__title container__title_income">Ваша «чистая» зарплата — то, что приходит на карточку</h2>
+            <label class="input input_income">
+              <input class="input__line input__line_net-income" type="text" name="net-income" placeholder="30 000" value='' autocomplete="off">₽
+            </label>
+          </li>
+          <li class="container">
+            <h2 class="container__title container__title_income">Ваша зарплата до уплаты налогов и сборов</h2>
+            <label class="output output_income">
+              <output class="output__line output__line_gross-income" name="gross-income">54545</output>&nbsp;₽
+            </label>
+          </li>
+        </ul>
       </section>
 
       <section class="taxes main__taxes">
-        <div class="container">
-          <h2 class="container__title container__title_taxes">Налоги и сборы за месяц</h2>
-          <label class="output output_taxes">
-            <output class="output__line output__line_taxes-month" name="taxes-month">24545</output>&nbsp;₽
-          </label>
-        </div>
-        <div class="container">
-          <h2 class="container__title container__title_taxes">За год</h2>
-          <label class="output output_taxes">
-            <output class="output__line output__line_taxes-year" name="taxes-year">294545</output>&nbsp;₽
-          </label>
-        </div>
-        <div class="container">
-          <h2 class="container__title container__title_taxes">И за пять лет</h2>
-          <label class="output output_taxes">
-            <output class="output__line output__line_taxes-five-year" name="taxes-five-year">1472727</output>&nbsp;₽
-          </label>
-        </div>
+        <ul class="taxes__list">
+          <li class="container">
+            <h2 class="container__title container__title_taxes">Налоги и сборы за месяц</h2>
+            <label class="output output_taxes">
+              <output class="output__line output__line_taxes-month" name="taxes-month">24545</output>&nbsp;₽
+            </label>
+          </li>
+          <li class="container">
+            <h2 class="container__title container__title_taxes">За год</h2>
+            <label class="output output_taxes">
+              <output class="output__line output__line_taxes-year" name="taxes-year">294545</output>&nbsp;₽
+            </label>
+          </li>
+          <li class="container">
+            <h2 class="container__title container__title_taxes">И за пять лет</h2>
+            <label class="output output_taxes">
+              <output class="output__line output__line_taxes-five-year" name="taxes-five-year">1472727</output>&nbsp;₽
+            </label>
+          </li>
+        </ul>
       </section>
 
       <section class="social main__social">

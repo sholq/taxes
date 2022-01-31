@@ -8,3 +8,10 @@
 .footer__link:hover {
   color: rgba(255, 255, 255, 1);
 }
+
+@media screen and (max-width: 750px) {
+  .footer__link {
+    font-size: 14px;
+    line-height: 1;
+  }
+}

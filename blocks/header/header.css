@@ -2,6 +2,13 @@
   max-width: 1270px;
   /* Позиционирование */
   margin: 0 auto;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 72px 65px 46px;
 }
+
+@media screen and (max-width: 750px) {
+  .header {
+    padding: 25px 30px 22px;
+  }
+ }

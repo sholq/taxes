@@ -1,8 +1,18 @@
 .input {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   /* Параметры текста */
   font-weight: 600;
   font-size: 60px;
   line-height: 1;
+}
+
+@media screen and (max-width: 750px) {
+  .input {
+    font-size: 40px;
+  }
 }

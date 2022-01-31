@@ -1,7 +1,15 @@
 .description {
   width: 100%;
   /* Позиционирование */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding-bottom: 53px;
   /* Стилизация */
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+@media screen and (max-width: 750px) {
+  .description {
+    padding-bottom: 24px;
+  }
 }

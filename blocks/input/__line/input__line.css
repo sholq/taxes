@@ -4,7 +4,8 @@
   height: 112px;
   /* Позиционирование */
   margin: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0 30px 0;
   /* Стилизация */
   border-radius: 10px;
@@ -21,4 +22,18 @@
 
 .input__line:focus {
   background-color: rgba(34, 34, 34, 1);
+}
+
+@media screen and (max-width: 750px) {
+  .input__line {
+    min-width: 200px;
+    width: 200px;
+    height: 70px;
+    /* Позиционирование */
+    padding: 0 15px 0;
+    /* Стилизация */
+    border-radius: 5px;
+    /* Параметры текста */
+    font-size: 44px;
+  }
 }

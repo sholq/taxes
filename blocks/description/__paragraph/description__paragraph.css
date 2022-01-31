@@ -9,3 +9,12 @@
 .description__paragraph:first-child {
   margin: 0;
 }
+
+@media screen and (max-width: 750px) {
+  .description__paragraph {
+    margin: 20px 0 0;
+    /* Параметры текста */
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}

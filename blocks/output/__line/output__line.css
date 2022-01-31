@@ -10,3 +10,9 @@
   line-height: 1;
   color: inherit;
 }
+
+@media screen and (max-width: 750px) {
+ .output__line {
+  font-size: 40px;
+ }
+}

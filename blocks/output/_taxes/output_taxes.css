@@ -3,3 +3,9 @@
   /* Параметры текста */
   color: #2B3A51;
 }
+
+@media screen and (max-width: 750px) {
+  .output_taxes {
+    margin-top: 11px;
+  }
+}

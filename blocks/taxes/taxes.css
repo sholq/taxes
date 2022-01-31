@@ -2,15 +2,29 @@
   max-width: 100%;
   min-height: 155px;
   /* Позиционирование */
+  display: -ms-grid;
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, -webkit-min-content));
   grid-template-columns: repeat(auto-fit, minmax(340px, min-content));
   grid-auto-rows: auto;
-  row-gap: 20px;
-  justify-content: start;
-  box-sizing: border-box;
-  /* Стилизация */
+  row-gap: 12px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 30px 50px 24px;
+  /* Стилизация */
   border-radius: 10px;
   background: #fff;
-  box-shadow: 3.2px 3.8px 28.2px 1.8px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 3.2px 3.8px 28.2px 1.8px rgba(0, 0, 0, 0.25);
+          box-shadow: 3.2px 3.8px 28.2px 1.8px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 750px) {
+  .taxes {
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+    padding: 25px;
+  }
 }

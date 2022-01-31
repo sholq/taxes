@@ -1,3 +1,9 @@
 .main__income {
   margin-bottom: 49px;
 }
+
+@media screen and (max-width: 750px) {
+  .main__income {
+    margin-bottom: 20px;
+  }
+}

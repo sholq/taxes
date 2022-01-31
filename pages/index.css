@@ -19,3 +19,22 @@
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
 }
+
+.header {
+  max-width: 1270px;
+  /* Позиционирование */
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 72px 65px 0;
+}
+
+.header__title {
+  max-width: 890px;
+  /* Позиционирование */
+  margin: 0;
+  /* Параметры текста */
+  font-style: normal;
+  font-weight: 800;
+  font-size: 100px;
+  line-height: 1;
+}

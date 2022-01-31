@@ -52,6 +52,14 @@
   margin-bottom: 49px;
 }
 
+.main__taxes {
+  margin-bottom: 27px;
+}
+
+.main__social {
+  margin-bottom: 27px;
+}
+
 .income {
   max-width: 1005px;
   /* Позиционирование */
@@ -181,4 +189,58 @@
   margin-top: 20px;
   /* Параметры текста */
   color: #2B3A51;
+}
+
+.social {
+  width: 100%;
+  /* Позиционирование */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social__list {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  column-gap: 7px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social__item {
+  margin: 0;
+}
+
+.social__link {
+  display: block;
+  width: 31px;
+  height: 31px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.social__link_facebook {
+  background-image: url(../image/facebook.svg);
+}
+
+.social__link_vkontakte {
+  background-image: url(../image/vk.svg);
+}
+
+.social__link_instagram {
+  background-image: url(../image/instagram.svg);
+}
+
+.social__link_youtube {
+  background-image: url(../image/youtube.svg);
+}
+
+.social__link_telegram {
+  background-image: url(../image/telegram.svg);
+}
+
+.social__link_tiktok {
+  background-image: url(../image/tiktok.svg);
 }

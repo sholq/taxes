@@ -1,0 +1,10 @@
+.footer__copyright-text {
+  max-width: 523px;
+  /* Позиционирование */
+  margin: 0;
+  /* Параметры текста */
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: rgba(255, 255, 255, 0.3);
+}

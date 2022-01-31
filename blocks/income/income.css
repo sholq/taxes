@@ -1,0 +1,9 @@
+.income {
+  max-width: 1005px;
+  /* Позиционирование */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(435px, max-content));
+  grid-auto-rows: auto;
+  row-gap: 20px;
+  justify-content: space-between;
+}

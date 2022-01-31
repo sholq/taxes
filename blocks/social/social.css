@@ -1,0 +1,7 @@
+.social {
+  width: 100%;
+  /* Позиционирование */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

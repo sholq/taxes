@@ -1,0 +1,11 @@
+.description__paragraph {
+  margin: 24px 0 0;
+  /* Параметры текста */
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.description__paragraph:first-child {
+  margin: 0;
+}

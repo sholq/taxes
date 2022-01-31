@@ -1,0 +1,8 @@
+.input {
+  display: flex;
+  align-items: center;
+  /* Параметры текста */
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 1;
+}

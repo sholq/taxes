@@ -1,0 +1,16 @@
+.taxes {
+  max-width: 100%;
+  min-height: 155px;
+  /* Позиционирование */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, min-content));
+  grid-auto-rows: auto;
+  row-gap: 20px;
+  justify-content: start;
+  box-sizing: border-box;
+  /* Стилизация */
+  padding: 30px 50px 24px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 3.2px 3.8px 28.2px 1.8px rgba(0, 0, 0, 0.25);
+}

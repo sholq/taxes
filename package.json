@@ -1,0 +1,23 @@
+{
+  "name": "taxes",
+  "version": "1.0.0",
+  "description": "### Обзор * Описание * Авторы * Вёрстка * GitPages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sholq/taxes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sholq/taxes/issues"
+  },
+  "homepage": "https://github.com/sholq/taxes#readme",
+  "devDependencies": {
+    "css-to-bem-file-structure": "^0.0.2"
+  }
+}

@@ -1,0 +1,7 @@
+.header {
+  max-width: 1270px;
+  /* Позиционирование */
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 72px 65px 46px;
+}

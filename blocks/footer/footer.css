@@ -1,0 +1,14 @@
+.footer {
+  max-width: 1270px;
+  /* Позиционирование */
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 24px 65px 46px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  column-gap: 10px;
+  justify-content: start;
+  align-items: center;
+  /* Стилизация */
+  border-top: rgba(255, 255, 255, 0.3);
+}

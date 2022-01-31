@@ -1,309 +1,40 @@
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts/СonquerorSans.css);
-
-.page {
-  min-width: 390px;
-  min-height: 100vh;
-  /* Позиционирование */
-  margin: 0 auto;
-  /* Параметры текста */
-  font-family: 'Conqueror Sans', Arial, sans-serif;
-  color: #FFFFFF;
-  /* Фон */
-  background: linear-gradient(37.72deg, #1B4C43 0%, #431E66 99.99%, rgba(196, 196, 196, 0) 100%, #2B3A51 100%);
-  /* Параметры оптимизации шрифта */
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-}
-
-.header {
-  max-width: 1270px;
-  /* Позиционирование */
-  margin: 0 auto;
-  box-sizing: border-box;
-  padding: 72px 65px 46px;
-}
-
-.header__title {
-  max-width: 890px;
-  /* Позиционирование */
-  margin: 0;
-  /* Параметры текста */
-  font-style: normal;
-  font-weight: 800;
-  font-size: 100px;
-  line-height: 1;
-}
-
-
-.main {
-  max-width: 1270px;
-  /* Позиционирование */
-  margin: 0 auto;
-  box-sizing: border-box;
-  padding: 0 65px 53px;
-}
-
-.main__income {
-  margin-bottom: 49px;
-}
-
-.main__taxes {
-  margin-bottom: 27px;
-}
-
-.main__social {
-  margin-bottom: 43px;
-}
-
-.income {
-  max-width: 1005px;
-  /* Позиционирование */
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(435px, max-content));
-  grid-auto-rows: auto;
-  row-gap: 20px;
-  justify-content: space-between;
-}
-
-.container {
-  margin: 0;
-  display: grid;
-  grid-template-rows: auto 1fr;
-}
-
-.container__title {
-  margin: 0;
-  /* Параметры текста */
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 1;
-}
-
-.container__title_income {
-  max-width: 328px;
-}
-
-.container__title_taxes {
-  font-size: 20px;
-  color: #2B3A51;
-}
-
-.input {
-  display: flex;
-  align-items: center;
-  /* Параметры текста */
-  font-weight: 600;
-  font-size: 60px;
-  line-height: 1;
-}
-
-.input_income {
-  box-sizing: border-box;
-  padding-top: 15px;
-}
-
-.input__line {
-  min-width: 300px;
-  width: 300px;
-  height: 112px;
-  /* Позиционирование */
-  margin: 0;
-  box-sizing: border-box;
-  padding: 0 30px 0;
-  /* Стилизация */
-  border-radius: 10px;
-  opacity: 0.2;
-  background-color: rgba(34, 34, 34, 1);
-  border: none;
-  /* Параметры текста */
-  font-weight: 600;
-  font-size: 60px;
-  line-height: 1;
-  outline: none;
-  color: inherit;
-}
-
-.input__line:focus {
-  background-color: rgba(34, 34, 34, 1);
-}
-
-.input__line_active {
-  opacity: 1;
-  background-color: rgba(34, 34, 34, 0.2);
-}
-
-.input__line_net-income {
-  margin: 0 28px 0 0;
-}
-
-.output {
-  display: flex;
-  align-items: center;
-  /* Параметры текста */
-  font-weight: 600;
-  font-size: 60px;
-  line-height: 1;
-}
-
-.output_income {
-  box-sizing: border-box;
-  padding-top: 15px;
-}
-
-.output__line {
-  margin: 0;
-  padding: 0;
-  /* Стилизация */
-  background: none;
-  border: none;
-  /* Параметры текста */
-  font-weight: 600;
-  font-size: 60px;
-  line-height: 1;
-  color: inherit;
-}
-
-.taxes {
-  max-width: 100%;
-  min-height: 155px;
-  /* Позиционирование */
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, min-content));
-  grid-auto-rows: auto;
-  row-gap: 20px;
-  justify-content: start;
-  box-sizing: border-box;
-  /* Стилизация */
-  padding: 30px 50px 24px;
-  border-radius: 10px;
-  background: #fff;
-  box-shadow: 3.2px 3.8px 28.2px 1.8px rgba(0, 0, 0, 0.25);
-}
-
-.output_taxes {
-  margin-top: 20px;
-  /* Параметры текста */
-  color: #2B3A51;
-}
-
-.social {
-  width: 100%;
-  /* Позиционирование */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.social__list {
-  display: grid;
-  grid-template-columns: repeat(6, auto);
-  column-gap: 7px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.social__item {
-  margin: 0;
-}
-
-.social__link {
-  display: block;
-  width: 31px;
-  height: 31px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.social__link_facebook {
-  background-image: url(../image/facebook.svg);
-}
-
-.social__link_vkontakte {
-  background-image: url(../image/vk.svg);
-}
-
-.social__link_instagram {
-  background-image: url(../image/instagram.svg);
-}
-
-.social__link_youtube {
-  background-image: url(../image/youtube.svg);
-}
-
-.social__link_telegram {
-  background-image: url(../image/telegram.svg);
-}
-
-.social__link_tiktok {
-  background-image: url(../image/tiktok.svg);
-}
-
-.description {
-  width: 100%;
-}
-
-.description__paragraph {
-  margin: 24px 0 0;
-  /* Параметры текста */
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-}
-
-.description__paragraph:first-child {
-  margin: 0;
-}
-
-.footer {
-  max-width: 1270px;
-  /* Позиционирование */
-  margin: 0 auto;
-  box-sizing: border-box;
-  padding: 24px 65px 46px;
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  column-gap: 10px;
-  justify-content: start;
-  align-items: center;
-  /* Стилизация */
-  border-top: rgba(255, 255, 255, 0.3);
-}
-
-.footer__copyright-icon {
-  width: 42px;
-  height: 42px;
-  background-image: url(../image/copyright.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.3;
-}
-
-.footer__copyright-text {
-  max-width: 523px;
-  /* Позиционирование */
-  margin: 0;
-  /* Параметры текста */
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  color: rgba(255, 255, 255, 0.3);
-}
-
-.footer__link {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  color: rgba(255, 255, 255, 0.3);
-}
-
-.footer__link:hover {
-  color: rgba(255, 255, 255, 1);
-}
+@import url(../blocks/page/page.css);
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__title/header__title.css);
+@import url(../blocks/main/main.css);
+@import url(../blocks/main/__income/main__income.css);
+@import url(../blocks/main/__taxes/main__taxes.css);
+@import url(../blocks/main/__social/main__social.css);
+@import url(../blocks/income/income.css);
+@import url(../blocks/container/container.css);
+@import url(../blocks/container/__title/container__title.css);
+@import url(../blocks/container/__title/_income/container__title_income.css);
+@import url(../blocks/container/__title/_taxes/container__title_taxes.css);
+@import url(../blocks/input/input.css);
+@import url(../blocks/input/_income/input_income.css);
+@import url(../blocks/input/__line/input__line.css);
+@import url(../blocks/input/__line/_net-income/input__line_net-income.css);
+@import url(../blocks/input/__line/_active/input__line_active.css);
+@import url(../blocks/output/output.css);
+@import url(../blocks/output/_income/output_income.css);
+@import url(../blocks/output/_taxes/output_taxes.css);
+@import url(../blocks/output/__line/output__line.css);
+@import url(../blocks/taxes/taxes.css);
+@import url(../blocks/social/social.css);
+@import url(../blocks/social/__list/social__list.css);
+@import url(../blocks/social/__item/social__item.css);
+@import url(../blocks/social/__link/social__link.css);
+@import url(../blocks/social/__link/_facebook/social__link_facebook.css);
+@import url(../blocks/social/__link/_instagram/social__link_instagram.css);
+@import url(../blocks/social/__link/_telegram/social__link_telegram.css);
+@import url(../blocks/social/__link/_tiktok/social__link_tiktok.css);
+@import url(../blocks/social/__link/_vkontakte/social__link_vkontakte.css);
+@import url(../blocks/social/__link/_youtube/social__link_youtube.css);
+@import url(../blocks/description/description.css);
+@import url(../blocks/description/__paragraph/description__paragraph.css);
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__copyright-icon/footer__copyright-icon.css);
+@import url(../blocks/footer/__copyright-text/footer__copyright-text.css);
+@import url(../blocks/footer/__link/footer__link.css);

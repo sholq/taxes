@@ -1,0 +1,12 @@
+.output__line {
+  margin: 0;
+  padding: 0;
+  /* Стилизация */
+  background: none;
+  border: none;
+  /* Параметры текста */
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 1;
+  color: inherit;
+}

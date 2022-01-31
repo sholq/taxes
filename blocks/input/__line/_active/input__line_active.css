@@ -1,0 +1,4 @@
+.input__line_active {
+  opacity: 1;
+  background-color: rgba(34, 34, 34, 0.2);
+}

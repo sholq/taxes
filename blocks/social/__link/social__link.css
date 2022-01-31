@@ -1,0 +1,8 @@
+.social__link {
+  display: block;
+  width: 31px;
+  height: 31px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

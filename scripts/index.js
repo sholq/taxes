@@ -1,15 +1,18 @@
 const page = document.querySelector('.page');
 
-const incomeSection = page.querySelector('.income');
-const inputNetIncome = incomeSection.querySelector('.income__input');
-const outputGrossIncome = incomeSection.querySelector('.income__output');
+const inputNetIncome = page.querySelector('.input__line_net-income');
+const outputGrossIncome = page.querySelector('.output__line_gross-income');
+
+const outputTaxesMonth = page.querySelector('.output__line_taxes-month');
+const outputTaxesYear = page.querySelector('.output__line_taxes-year');
+const outputTaxesFiveYear = page.querySelector('.output__line_taxes-five-year');
 
 function renderNumber(value) {
   return Number(value.replace(/\s/g, '')).toLocaleString('nb-NO');
 }
 
 inputNetIncome.addEventListener('keydown', evt => {
-  if (evt.target.value.length === 10 && evt.key !== 'Backspace') {
+  if (evt.target.value.length === 7 && evt.key !== 'Backspace') {
     evt.preventDefault();
   }
   if (Number.isNaN(Number(evt.key)) && evt.key !== 'Backspace') {
@@ -18,11 +21,11 @@ inputNetIncome.addEventListener('keydown', evt => {
 })
 
 inputNetIncome.addEventListener('keyup', evt => {
-  if (!evt.target.classList.contains('income__input_active')) {
-    evt.target.classList.add('income__input_active');
+  if (!evt.target.classList.contains('input__line_active')) {
+    evt.target.classList.add('input__line_active');
   }
   if (evt.target.value === '') {
-    evt.target.classList.remove('income__input_active');
+    evt.target.classList.remove('input__line_active');
   } else {
     evt.target.value = renderNumber(evt.target.value);
   }
@@ -30,3 +33,6 @@ inputNetIncome.addEventListener('keyup', evt => {
 })
 
 outputGrossIncome.value = renderNumber(outputGrossIncome.value);
+outputTaxesMonth.value = renderNumber(outputTaxesMonth.value);
+outputTaxesYear.value = renderNumber(outputTaxesYear.value);
+outputTaxesFiveYear.value = renderNumber(outputTaxesFiveYear.value);

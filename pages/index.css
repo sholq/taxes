@@ -46,28 +46,29 @@
   margin: 0 auto;
   box-sizing: border-box;
   padding: 0 65px 53px;
-  display: grid;
-  grid-auto-rows: auto;
-  row-gap: 49px 27px 43px;
+}
+
+.main__income {
+  margin-bottom: 49px;
 }
 
 .income {
-  max-width: 940px;
+  max-width: 1005px;
   /* Позиционирование */
   display: grid;
-  grid-template-columns: repeat(2, minmax(293px, 369px));
+  grid-template-columns: repeat(auto-fit, minmax(435px, max-content));
+  grid-auto-rows: auto;
+  row-gap: 20px;
   justify-content: space-between;
 }
 
-.income__container {
+.container {
   margin: 0;
   display: grid;
   grid-template-rows: auto 1fr;
 }
 
-.income__caption {
-  max-width: 328px;
-  /* Позиционирование */
+.container__title {
   margin: 0;
   /* Параметры текста */
   font-weight: 500;
@@ -75,9 +76,16 @@
   line-height: 1;
 }
 
-.income__net-income {
-  box-sizing: border-box;
-  padding-top: 15px;
+.container__title_income {
+  max-width: 328px;
+}
+
+.container__title_taxes {
+  font-size: 20px;
+  color: #2B3A51;
+}
+
+.input {
   display: flex;
   align-items: center;
   /* Параметры текста */
@@ -86,12 +94,17 @@
   line-height: 1;
 }
 
-.income__input {
+.input_income {
+  box-sizing: border-box;
+  padding-top: 15px;
+}
+
+.input__line {
   min-width: 300px;
   width: 300px;
   height: 112px;
   /* Позиционирование */
-  margin: 0 28px 0 0;
+  margin: 0;
   box-sizing: border-box;
   padding: 0 30px 0;
   /* Стилизация */
@@ -104,21 +117,23 @@
   font-size: 60px;
   line-height: 1;
   outline: none;
-  color: #fff;
+  color: inherit;
 }
 
-.income__input_active {
+.input__line:focus {
+  background-color: rgba(34, 34, 34, 1);
+}
+
+.input__line_active {
   opacity: 1;
   background-color: rgba(34, 34, 34, 0.2);
 }
 
-.income__input:focus {
-  background-color: rgba(34, 34, 34, 1);
+.input__line_net-income {
+  margin: 0 28px 0 0;
 }
 
-.income__gross-income {
-  box-sizing: border-box;
-  padding-top: 15px;
+.output {
   display: flex;
   align-items: center;
   /* Параметры текста */
@@ -127,7 +142,12 @@
   line-height: 1;
 }
 
-.income__output {
+.output_income {
+  box-sizing: border-box;
+  padding-top: 15px;
+}
+
+.output__line {
   margin: 0;
   padding: 0;
   /* Стилизация */
@@ -137,5 +157,28 @@
   font-weight: 600;
   font-size: 60px;
   line-height: 1;
-  color: #fff;
+  color: inherit;
+}
+
+.taxes {
+  max-width: 100%;
+  min-height: 155px;
+  /* Позиционирование */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, min-content));
+  grid-auto-rows: auto;
+  row-gap: 20px;
+  justify-content: start;
+  box-sizing: border-box;
+  /* Стилизация */
+  padding: 30px 50px 24px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 3.2px 3.8px 28.2px 1.8px rgba(0, 0, 0, 0.25);
+}
+
+.output_taxes {
+  margin-top: 20px;
+  /* Параметры текста */
+  color: #2B3A51;
 }

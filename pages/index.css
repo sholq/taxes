@@ -10,7 +10,7 @@
   font-family: 'Conqueror Sans', Arial, sans-serif;
   color: #FFFFFF;
   /* Фон */
-  background: #000;
+  background: linear-gradient(37.72deg, #1B4C43 0%, #431E66 99.99%, rgba(196, 196, 196, 0) 100%, #2B3A51 100%);
   /* Параметры оптимизации шрифта */
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

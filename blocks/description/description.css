@@ -1,3 +1,7 @@
 .description {
   width: 100%;
+  /* Позиционирование */
+  padding-bottom: 53px;
+  /* Стилизация */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }

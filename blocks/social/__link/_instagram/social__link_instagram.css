@@ -1,3 +1,7 @@
 .social__link_instagram {
   background-image: url(../../../../../image/instagram.svg);
 }
+
+.social__link_instagram:hover {
+  background-image: url(../../../../../image/instagram-hover.svg);
+}

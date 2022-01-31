@@ -1,3 +1,7 @@
 .social__link_vkontakte {
   background-image: url(../../../../../image/vk.svg);
 }
+
+.social__link_vkontakte:hover {
+  background-image: url(../../../../../image/vk-hover.svg);
+}

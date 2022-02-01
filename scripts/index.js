@@ -65,6 +65,20 @@ function calculateTaxes() {
   outputTaxesFiveYear.value = taxesFiveYear;
 }
 
+const links = page.querySelectorAll('a');
+
+function disableLink(evt) {
+  evt.preventDefault();
+}
+
+function disableLinks() {
+  links.forEach(item => {
+    item.addEventListener('click', disableLink);
+  })
+}
+
+disableLinks();
+
 inputNetIncome.addEventListener('keydown', lockNaNKey);
 inputNetIncome.addEventListener('keydown', fixMaxStringLength);
 inputNetIncome.addEventListener('keyup', preventStickyPressKeys);

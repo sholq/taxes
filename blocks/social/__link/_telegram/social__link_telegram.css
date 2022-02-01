@@ -1,7 +1,7 @@
 .social__link_telegram {
-  background-image: url(../../../../../image/telegram.svg);
+  background-image: url(../../../../image/telegram.svg);
 }
 
 .social__link_telegram:hover {
-  background-image: url(../../../../../image/telegram-hover.svg);
+  background-image: url(../../../../image/telegram-hover.svg);
 }

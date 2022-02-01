@@ -1,7 +1,7 @@
 .social__link_tiktok {
-  background-image: url(../../../../../image/tiktok.svg);
+  background-image: url(../../../../image/tiktok.svg);
 }
 
 .social__link_tiktok:hover {
-  background-image: url(../../../../../image/tiktok-hover.svg);
+  background-image: url(../../../../image/tiktok-hover.svg);
 }

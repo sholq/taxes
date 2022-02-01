@@ -1,7 +1,7 @@
-.social__link_youtube {
+.social__link_to_youtube {
   background-image: url(../../../../image/youtube.svg);
 }
 
-.social__link_youtube:hover {
+.social__link_to_youtube:hover {
   background-image: url(../../../../image/youtube-hover.svg);
 }

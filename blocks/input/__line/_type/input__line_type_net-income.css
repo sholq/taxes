@@ -1,9 +1,9 @@
-.input__line_net-income {
+.input__line_type_net-income {
   margin: 0 28px 0 0;
 }
 
 @media screen and (max-width: 750px) {
-  .input__line_net-income {
+  .input__line_type_net-income {
     margin: 0 15px 0 0;
   }
 }

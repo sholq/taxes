@@ -1,7 +1,7 @@
-.social__link_facebook {
+.social__link_to_facebook {
   background-image: url(../../../../image/facebook.svg);
 }
 
-.social__link_facebook:hover {
+.social__link_to_facebook:hover {
   background-image: url(../../../../image/facebook-hover.svg);
 }

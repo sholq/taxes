@@ -1,12 +1,12 @@
 const page = document.querySelector('.page');
 
-const inputNetIncome = page.querySelector('.input__line_net-income');
+const inputNetIncome = page.querySelector('.input__line_type_net-income');
 
 const outputs = page.querySelectorAll('.output__line');
-const outputGrossIncome = page.querySelector('.output__line_gross-income');
-const outputTaxesMonth = page.querySelector('.output__line_taxes-month');
-const outputTaxesYear = page.querySelector('.output__line_taxes-year');
-const outputTaxesFiveYear = page.querySelector('.output__line_taxes-five-year');
+const outputGrossIncome = page.querySelector('.output__line_type_gross-income');
+const outputTaxesMonth = page.querySelector('.output__line_type_taxes-month');
+const outputTaxesYear = page.querySelector('.output__line_type_taxes-year');
+const outputTaxesFiveYear = page.querySelector('.output__line_type_taxes-five-year');
 
 function renderNumber(value) {
   const formattedString = Number(value.replace(/\s/g, '')).toLocaleString('nb-NO');

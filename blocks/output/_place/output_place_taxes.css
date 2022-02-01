@@ -1,11 +1,11 @@
-.output_taxes {
+.output_place_taxes {
   margin-top: 20px;
   /* Параметры текста */
   color: #2B3A51;
 }
 
 @media screen and (max-width: 750px) {
-  .output_taxes {
+  .output_place_taxes {
     margin-top: 11px;
   }
 }

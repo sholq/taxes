@@ -13,6 +13,12 @@ function renderNumber(value) {
   return formattedString;
 }
 
+function renderOutputs() {
+  outputs.forEach(item => {
+    item.value = renderNumber(item.value);
+  })
+}
+
 function lockNaNKey(evt) {
   if (Number.isNaN(Number(evt.key)) && evt.key !== 'Backspace') {
     evt.preventDefault();
@@ -38,11 +44,25 @@ function activateInputLine(evt) {
 }
 
 function renderInputLine(evt) {
-  if (evt.target.value === '') {
+  if (!evt.target.value) {
     evt.target.classList.remove('input__line_active');
   } else {
     evt.target.value = renderNumber(evt.target.value);
   }
+}
+
+function calculateTaxes() {
+  const currentNetIncomeValue = inputNetIncome.value.replace(/\s/g, '');
+
+  const grossIncome = Math.round(currentNetIncomeValue / .55);
+  const taxesMonth = Math.round(grossIncome - currentNetIncomeValue);
+  const taxesYear = Math.round(taxesMonth * 12);
+  const taxesFiveYear = Math.round(taxesYear * 5);
+
+  outputGrossIncome.value = grossIncome;
+  outputTaxesMonth.value = taxesMonth;
+  outputTaxesYear.value = taxesYear;
+  outputTaxesFiveYear.value = taxesFiveYear;
 }
 
 inputNetIncome.addEventListener('keydown', lockNaNKey);
@@ -50,7 +70,7 @@ inputNetIncome.addEventListener('keydown', fixMaxStringLength);
 inputNetIncome.addEventListener('keyup', preventStickyPressKeys);
 inputNetIncome.addEventListener('keyup', activateInputLine);
 inputNetIncome.addEventListener('keyup', renderInputLine);
+inputNetIncome.addEventListener('keyup', calculateTaxes);
+inputNetIncome.addEventListener('keyup', renderOutputs);
 
-outputs.forEach(item => {
-  item.value = renderNumber(item.value);
-})
+renderOutputs();

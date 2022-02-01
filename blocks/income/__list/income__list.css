@@ -3,8 +3,8 @@
   /* Позиционирование */
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(435px, -webkit-max-content));
-  grid-template-columns: repeat(auto-fit, minmax(435px, max-content));
+  grid-template-columns: repeat(auto-fit, minmax(375px, -webkit-max-content));
+  grid-template-columns: repeat(auto-fit, minmax(375px, max-content));
   grid-auto-rows: auto;
   row-gap: 25px;
   -webkit-box-pack: justify;

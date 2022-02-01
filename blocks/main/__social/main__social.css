@@ -4,6 +4,6 @@
 
 @media screen and (max-width: 750px) {
   .main__social {
-    margin-bottom: 29px;
+    display: none;
   }
 }

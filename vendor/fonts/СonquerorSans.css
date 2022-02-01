@@ -1,23 +1,23 @@
 @font-face {
     font-family: 'Conqueror Sans';
-    src: url('ConquerorSansExtraBold.woff2') format('woff2'),
-        url('ConquerorSansExtraBold.woff') format('woff');
+    src: url('conqueror-sans-800.woff2') format('woff2'),
+        url('conqueror-sans-800.woff') format('woff');
     font-weight: 800;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Conqueror Sans';
-    src: url('ConquerorSansSemiBold.woff2') format('woff2'),
-        url('ConquerorSansSemiBold.woff') format('woff');
+    src: url('conqueror-sans-600.woff2') format('woff2'),
+        url('conqueror-sans-600.woff') format('woff');
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Conqueror Sans';
-    src: url('ConquerorSansMedium.woff2') format('woff2'),
-        url('ConquerorSansMedium.woff') format('woff');
+    src: url('conqueror-sans-500.woff2') format('woff2'),
+        url('conqueror-sans-500.woff') format('woff');
     font-weight: 500;
     font-style: normal;
 }

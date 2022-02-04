@@ -43,12 +43,6 @@ function preventStickyPressKeys(evt) {
   }
 }
 
-function activateInputLine(evt) {
-  if (!evt.target.classList.contains('input__line_active')) {
-    evt.target.classList.add('input__line_active');
-  }
-}
-
 function renderInputLine(evt) {
   if (!evt.target.value) {
     evt.target.classList.remove('input__line_active');
@@ -88,7 +82,6 @@ disableLinks();
 inputNetIncome.addEventListener('keydown', lockNaNKey);
 inputNetIncome.addEventListener('keydown', fixMaxStringLength);
 inputNetIncome.addEventListener('keyup', preventStickyPressKeys);
-inputNetIncome.addEventListener('keyup', activateInputLine);
 inputNetIncome.addEventListener('keyup', renderInputLine);
 inputNetIncome.addEventListener('keyup', calculateTaxes);
 inputNetIncome.addEventListener('keyup', renderOutputs);

@@ -16,7 +16,6 @@
 @import url(../blocks/input/_place/input_place_income.css);
 @import url(../blocks/input/__line/input__line.css);
 @import url(../blocks/input/__line/_type/input__line_type_net-income.css);
-@import url(../blocks/input/__line/_active/input__line_active.css);
 @import url(../blocks/output/output.css);
 @import url(../blocks/output/_place/output_place_income.css);
 @import url(../blocks/output/_place/output_place_taxes.css);

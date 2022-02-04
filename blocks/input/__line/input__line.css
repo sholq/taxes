@@ -5,12 +5,11 @@
   /* Позиционирование */
   margin: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0 30px 0;
   /* Стилизация */
   border-radius: 10px;
-  opacity: 0.2;
-  background-color: rgba(34, 34, 34, 1);
+  background-color: rgba(34, 34, 34, 0.2);
   border: none;
   /* Параметры текста */
   font-weight: 600;
@@ -20,8 +19,40 @@
   color: inherit;
 }
 
+.input__line::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.input__line::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.input__line:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.input__line::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.input__line::placeholder {
+  color: rgba(255, 255, 255, 0.2);
+}
+
 .input__line:focus {
-  background-color: rgba(34, 34, 34, 1);
+  -webkit-box-shadow: inset 3.2px 3.8px 28px 1.8px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 3.2px 3.8px 28px 1.8px rgba(0, 0, 0, 0.125);
+  background-color: rgba(34, 34, 34, 0.5);
+}
+
+.input__line:hover {
+  -webkit-box-shadow: inset 3.2px 3.8px 28px 1.8px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 3.2px 3.8px 28px 1.8px rgba(0, 0, 0, 0.1);
+}
+
+.input__line:focus:hover {
+  -webkit-box-shadow: inset 3.2px 3.8px 28px 1.8px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 3.2px 3.8px 28px 1.8px rgba(0, 0, 0, 0.125);
 }
 
 @media screen and (max-width: 750px) {

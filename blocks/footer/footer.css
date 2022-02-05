@@ -3,26 +3,28 @@
   /* Позиционирование */
   margin: 0 auto;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 24px 65px 46px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto 10px auto;
   grid-template-columns: repeat(2, auto);
   -webkit-column-gap: 10px;
-     -moz-column-gap: 10px;
-          column-gap: 10px;
+  -moz-column-gap: 10px;
+  column-gap: 10px;
+  row-gap: 13px;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -ms-flex-pack: start;
+  justify-content: start;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 750px) {
   .footer {
     padding: 17px 30px 40px;
+    row-gap: 7px;
   }
 }
 

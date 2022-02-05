@@ -16,7 +16,7 @@ function renderNumber(value) {
 function renderOutputs() {
   outputs.forEach(item => {
     item.value = renderNumber(item.value);
-  })
+  });
 }
 
 function lockNaNKey(evt) {
@@ -65,19 +65,29 @@ function calculateTaxes() {
   outputTaxesFiveYear.value = taxesFiveYear;
 }
 
-const links = page.querySelectorAll('a');
-
 function disableLink(evt) {
   evt.preventDefault();
 }
 
 function disableLinks() {
+  const links = page.querySelectorAll('a');
   links.forEach(item => {
     item.addEventListener('click', disableLink);
-  })
+  });
 }
 
-disableLinks();
+function setCopyrightTextMarkup() {
+  const copyrightTextFirstTemplate = document.querySelector('#copyright-text-first-template').content.cloneNode(true);
+  const copyrightTextSecondTemplate = document.querySelector('#copyright-text-second-template').content.cloneNode(true);
+  const copyrightText = page.querySelector('.footer__copyright-text');
+
+  if (window.innerWidth < 475) {
+    copyrightText.replaceWith(copyrightTextSecondTemplate);
+  } else {
+    copyrightText.replaceWith(copyrightTextFirstTemplate);
+  }
+  disableLinks();
+}
 
 inputNetIncome.addEventListener('keydown', lockNaNKey);
 inputNetIncome.addEventListener('keydown', fixMaxStringLength);
@@ -88,3 +98,7 @@ inputNetIncome.addEventListener('keyup', renderOutputs);
 inputNetIncome.addEventListener('keydown', handleNaNError);
 
 renderOutputs();
+
+window.addEventListener('resize', setCopyrightTextMarkup);
+
+setCopyrightTextMarkup();

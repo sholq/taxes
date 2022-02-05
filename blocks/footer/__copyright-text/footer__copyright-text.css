@@ -1,7 +1,5 @@
 .footer__copyright-text {
-  max-width: 610px;
-  /* Позиционирование */
-  margin: 0;
+  max-width: 100%;
   /* Параметры текста */
   font-weight: 500;
   font-size: 20px;
@@ -9,11 +7,10 @@
   color: rgba(255, 255, 255, 0.3);
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 620px) {
   .footer__copyright-text {
-    max-width: 260px;
-    /* Параметры текста */
     font-size: 14px;
     line-height: 1;
   }
 }
+

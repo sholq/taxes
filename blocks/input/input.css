@@ -6,7 +6,7 @@
       -ms-flex-align: center;
           align-items: center;
   /* Параметры текста */
-  font-weight: 600;
+  font-weight: bold;
   font-size: 60px;
   line-height: 1;
 }

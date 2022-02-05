@@ -82,9 +82,13 @@ function setCopyrightTextMarkup() {
   const copyrightText = page.querySelector('.footer__copyright-text');
 
   if (window.innerWidth < 475) {
-    copyrightText.replaceWith(copyrightTextSecondTemplate);
+    if (copyrightText.classList.contains('first-template')) {
+      copyrightText.replaceWith(copyrightTextSecondTemplate);
+    }
   } else {
-    copyrightText.replaceWith(copyrightTextFirstTemplate);
+    if (copyrightText.classList.contains('second-template')) {
+      copyrightText.replaceWith(copyrightTextFirstTemplate);
+    }
   }
   disableLinks();
 }

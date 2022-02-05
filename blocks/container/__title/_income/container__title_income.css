@@ -1,9 +1,9 @@
 .container__title_income {
-  max-width: 328px;
+  max-width: 370px;
 }
 
 @media screen and (max-width: 750px) {
   .container__title_income {
-    max-width: 275px;
+    max-width: 300px;
   }
 }

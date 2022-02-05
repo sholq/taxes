@@ -7,10 +7,10 @@
   color: rgba(255, 255, 255, 0.3);
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 675px) {
   .footer__copyright-text {
-    font-size: 14px;
-    line-height: 1;
+    font-size: 12px;
+    line-height: 14px;
   }
 }
 

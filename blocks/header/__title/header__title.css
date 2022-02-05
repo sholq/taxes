@@ -1,5 +1,5 @@
 .header__title {
-  max-width: 890px;
+  max-width: 900px;
   /* Позиционирование */
   margin: 0;
   /* Параметры текста */
@@ -17,6 +17,6 @@
 
 @media screen and (max-width: 500px) {
  .header__title {
-  font-size: 40px;
+  font-size: 36px;
  }
 }

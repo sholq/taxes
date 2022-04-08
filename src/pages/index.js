@@ -1,5 +1,6 @@
 import Input from "../components/Input.js";
 import Output from "../components/Output.js";
+import Resize from "../components/Resize.js";
 import { throttle } from "../utils/utils.js";
 
 const outputs = document.querySelectorAll('.output__line');
@@ -16,39 +17,21 @@ const inputNetIncome = new Input('.input__line_type_net-income', 7, outputs, (re
   outputTaxesFiveYear.setValue(results);
 });
 
-inputNetIncome.setEventListener();
+const resizeHandler = new Resize(throttle, disableLinks);
 
-function disableLink(evt) {
-  evt.preventDefault();
-}
+inputNetIncome.setEventListener();
 
 const links = document.querySelectorAll('a');
 
 function disableLinks() {
   links.forEach(item => {
-    item.addEventListener('click', disableLink);
+    item.addEventListener('click', (evt) => {
+      evt.preventDefault();
+    });
   });
 }
 
-function setCopyrightTextMarkup() {
-  const copyrightTextFirstTemplate = document.querySelector('#copyright-text-first-template').content.cloneNode(true);
-  const copyrightTextSecondTemplate = document.querySelector('#copyright-text-second-template').content.cloneNode(true);
-  const copyrightText = document.querySelector('.footer__copyright-text');
+window.addEventListener('resize', resizeHandler.switchCopyRightTextMarkup);
 
-  if (window.innerWidth < 475) {
-    if (copyrightText.classList.contains('first-template')) {
-      copyrightText.replaceWith(copyrightTextSecondTemplate);
-    }
-  } else {
-    if (copyrightText.classList.contains('second-template')) {
-      copyrightText.replaceWith(copyrightTextFirstTemplate);
-    }
-  }
-  disableLinks();
-}
-
-const throttledCopyrightTextMarkupHandler = throttle(setCopyrightTextMarkup, 150)
-
-window.addEventListener('resize', throttledCopyrightTextMarkupHandler);
-
-setCopyrightTextMarkup();
+resizeHandler.setCopyrightTextMarkup();
+disableLinks();

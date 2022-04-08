@@ -1,5 +1,6 @@
 import Input from "../components/Input.js";
 import Output from "../components/Output.js";
+import { throttle } from "../utils/utils.js";
 
 const outputs = document.querySelectorAll('.output__line');
 
@@ -46,6 +47,8 @@ function setCopyrightTextMarkup() {
   disableLinks();
 }
 
-window.addEventListener('resize', setCopyrightTextMarkup);
+const throttledCopyrightTextMarkupHandler = throttle(setCopyrightTextMarkup, 150)
+
+window.addEventListener('resize', throttledCopyrightTextMarkupHandler);
 
 setCopyrightTextMarkup();

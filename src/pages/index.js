@@ -1,3 +1,5 @@
+import './index.css';
+
 import Input from "../components/Input.js";
 import Output from "../components/Output.js";
 import Resize from "../components/Resize.js";

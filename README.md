@@ -21,6 +21,10 @@
 **Вёрстка**
 Силкин Семён
 
+**Стек технологий**
+
+HTML / CSS / JS
+
 **GitPages**
 
 Ссылка: https://sholq.github.io/taxes/

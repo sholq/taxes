@@ -54,7 +54,7 @@ function renderInputLine(evt) {
 function calculateTaxes() {
   const currentNetIncomeValue = inputNetIncome.value.replace(/\D/g, '');
 
-  const grossIncome = Math.round(currentNetIncomeValue / .57);
+  const grossIncome = Math.round(currentNetIncomeValue * (1.13 + (0.3 / 0.87)));
   const taxesMonth = Math.round(grossIncome - currentNetIncomeValue);
   const taxesYear = Math.round(taxesMonth * 12);
   const taxesFiveYear = Math.round(taxesYear * 5);

@@ -1,5 +1,24 @@
+import {useParams} from "react-router-dom";
+import {useEffect} from "react";
+
 function Income(props) {
-  const {inputOnChange, netIncome, grossIncome} = props;
+  const {setNetIncome, netIncome, grossIncome} = props;
+
+  let {amount} = useParams();
+
+  useEffect(() => {
+    if (amount && !isNaN(amount)) {
+      if (amount.length > 6) {
+        amount = amount.slice(0, 6);
+      }
+      setNetIncome(amount);
+    }
+  },[]);
+
+  function inputOnChange(evt) {
+    const income = evt.target.value.replace(/\D/g, '');
+    setNetIncome(income);
+  }
 
   function renderNumber(value) {
     const formattedString = Number(value.replace(/\D/g, '')).toLocaleString('nb-NO');

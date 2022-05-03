@@ -32,20 +32,14 @@ function App() {
 
   window.addEventListener('resize', handleFooterResize);
 
-  const [netIncome, setNetIncome] = useState(0);
+  const [netIncome, setNetIncome] = useState(30000);
   const [grossIncome, setGrossIncome] = useState(0);
   const [taxesForMonth, setTaxesForMonth] = useState(0);
   const [taxesForYear, setTaxesForYear] = useState(0);
   const [taxesForFiveYear, setTaxesForFiveYear] = useState(0);
 
-  function inputOnChange(evt) {
-    const income = evt.target.value.replace(/\D/g, '');
-    setNetIncome(income);
-  }
-
   useEffect(() => {
     handleFooterResize();
-    setNetIncome(100000);
   }, [])
 
   useEffect(() => {
@@ -59,7 +53,7 @@ function App() {
     <div className="page">
       <Header />
       <Main
-        inputOnChange={inputOnChange}
+        setNetIncome={setNetIncome}
         netIncome={netIncome}
         grossIncome={grossIncome}
         taxesForMonth={taxesForMonth}

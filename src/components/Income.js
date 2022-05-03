@@ -1,4 +1,6 @@
-function Income() {
+function Income(props) {
+  const {inputOnChange, netIncome, grossIncome} = props;
+
   function renderNumber(value) {
     const formattedString = Number(value.replace(/\D/g, '')).toLocaleString('nb-NO');
     return formattedString;
@@ -51,14 +53,22 @@ function Income() {
           <h2 className="container__title container__title_income">Ваша «чистая» зарплата — то, что приходит на
             карточку</h2>
           <label className="input input_place_income">
-            <input className="input__line input__line_type_net-income" type="text" name="net-income"
-                   placeholder="30 000" autoComplete="off" onKeyDown={handleKeyDown} onKeyUp={handleKeyUp}/>₽
+            <input
+              className="input__line input__line_type_net-income"
+              type="text"
+              name="net-income"
+              placeholder="30 000"
+              autoComplete="off"
+              value={renderNumber(netIncome + '')}
+              onKeyDown={handleKeyDown}
+              onKeyUp={handleKeyUp}
+              onChange={inputOnChange}/>₽
           </label>
         </li>
         <li className="container">
           <h2 className="container__title container__title_income">Ваша зарплата до уплаты налогов и сборов</h2>
           <label className="output output_place_income">
-            <output className="output__line output__line_type_gross-income" name="gross-income">54545</output>
+            <output className="output__line output__line_type_gross-income" name="gross-income">{grossIncome}</output>
             &nbsp;₽
           </label>
         </li>

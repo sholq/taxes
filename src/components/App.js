@@ -32,14 +32,40 @@ function App() {
 
   window.addEventListener('resize', handleFooterResize);
 
+  const [netIncome, setNetIncome] = useState(0);
+  const [grossIncome, setGrossIncome] = useState(0);
+  const [taxesForMonth, setTaxesForMonth] = useState(0);
+  const [taxesForYear, setTaxesForYear] = useState(0);
+  const [taxesForFiveYear, setTaxesForFiveYear] = useState(0);
+
+  function inputOnChange(evt) {
+    const income = evt.target.value.replace(/\D/g, '');
+    setNetIncome(income);
+  }
+
   useEffect(() => {
     handleFooterResize();
+    setNetIncome(100000);
   }, [])
+
+  useEffect(() => {
+    setGrossIncome(() => Math.round(netIncome * (1.13 + (0.3 / 0.87))));
+    setTaxesForMonth(() => Math.round(grossIncome - netIncome));
+    setTaxesForYear(() => Math.round(taxesForMonth * 12));
+    setTaxesForFiveYear(() => Math.round(taxesForYear * 5));
+  }, [netIncome, grossIncome, taxesForMonth, taxesForYear, taxesForFiveYear])
 
   return (
     <div className="page">
       <Header />
-      <Main />
+      <Main
+        inputOnChange={inputOnChange}
+        netIncome={netIncome}
+        grossIncome={grossIncome}
+        taxesForMonth={taxesForMonth}
+        taxesForYear={taxesForYear}
+        taxesForFiveYear={taxesForFiveYear}
+      />
       <Footer isMobile={isMobile}/>
     </div>
   );

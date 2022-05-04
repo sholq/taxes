@@ -1,9 +1,11 @@
 import {useState, useEffect} from 'react';
+import {Route, Switch} from "react-router-dom";
 import '../App.css';
 
 import Header from "./Header";
 import Main from "./Main";
 import Footer from "./Footer";
+import PageNotFound from "./PageNotFound";
 
 import {throttle} from "../utils/throttle";
 
@@ -40,14 +42,31 @@ function App() {
   return (
     <div className="page">
       <Header />
-      <Main
-        setNetIncome={setNetIncome}
-        netIncome={netIncome}
-        grossIncome={grossIncome}
-        taxesForMonth={taxesForMonth}
-        taxesForYear={taxesForYear}
-        taxesForFiveYear={taxesForFiveYear}
-      />
+      <Switch>
+        <Route exact path="/">
+          <Main
+            setNetIncome={setNetIncome}
+            netIncome={netIncome}
+            grossIncome={grossIncome}
+            taxesForMonth={taxesForMonth}
+            taxesForYear={taxesForYear}
+            taxesForFiveYear={taxesForFiveYear}
+          />
+        </Route>
+        <Route path="/amount$:amount">
+          <Main
+            setNetIncome={setNetIncome}
+            netIncome={netIncome}
+            grossIncome={grossIncome}
+            taxesForMonth={taxesForMonth}
+            taxesForYear={taxesForYear}
+            taxesForFiveYear={taxesForFiveYear}
+          />
+        </Route>
+        <Route path="*">
+          <PageNotFound />
+        </Route>
+      </Switch>
       <Footer isMobile={isMobile}/>
     </div>
   );

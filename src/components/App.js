@@ -10,15 +10,6 @@ import {throttle} from "../utils/throttle";
 function App() {
   const [isMobile, setIsMobile] = useState(false);
 
-  function disableLinks() {
-    const links = document.querySelectorAll('a');
-    links.forEach(item => {
-      item.addEventListener('click', (evt) => {
-        evt.preventDefault();
-      });
-    });
-  }
-
   function handleFooterResize() {
     throttle(() => {
       if (window.innerWidth < 475) {
@@ -26,7 +17,6 @@ function App() {
       } else {
         setIsMobile(false);
       }
-      disableLinks();
     }, 150);
   }
 

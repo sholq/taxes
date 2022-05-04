@@ -1,9 +1,0 @@
-.main__taxes {
-  margin-bottom: 27px;
-}
-
-@media screen and (max-width: 750px) {
-  .main__taxes {
-    margin-bottom: 37px;
-  }
-}

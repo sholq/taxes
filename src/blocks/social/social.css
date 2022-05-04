@@ -1,0 +1,31 @@
+.social {
+  width: 100%;
+  /* Позиционирование */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 750px) {
+  .social {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 22px 25px 25px;
+    /* Стилизация */
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: #fff;
+    /* -webkit-box-shadow: 3.2px -3.8px 28.2px 1.8px rgba(0, 0, 0, 0.25);
+            box-shadow: 3.2px -3.8px 28.2px 1.8px rgba(0, 0, 0, 0.25); */
+  }
+}

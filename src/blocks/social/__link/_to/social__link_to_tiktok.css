@@ -1,0 +1,13 @@
+.social__link_to_tiktok {
+  background-image: url(../../../../image/tiktok.svg);
+}
+
+.social__link_to_tiktok:hover {
+  background-image: url(../../../../image/tiktok-hover.svg);
+}
+
+@media screen and (max-width: 750px) {
+  .social__link_to_tiktok {
+    background-image: url(../../../../image/tiktok-dark.svg);
+  }
+}

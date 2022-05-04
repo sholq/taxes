@@ -26,28 +26,6 @@ function Taxes(props) {
           </label>
         </li>
       </ul>
-      <div className="social taxes__social">
-        <ul className="social__list">
-          <li className="social__item">
-            <a className="taxes__link taxes__link_to_facebook" href="#"></a>
-          </li>
-          <li className="social__item">
-            <a className="taxes__link taxes__link_to_vkontakte" href="#"></a>
-          </li>
-          <li className="social__item">
-            <a className="taxes__link taxes__link_to_instagram" href="#"></a>
-          </li>
-          <li className="social__item">
-            <a className="taxes__link taxes__link_to_youtube" href="#"></a>
-          </li>
-          <li className="social__item">
-            <a className="taxes__link taxes__link_to_telegram" href="#"></a>
-          </li>
-          <li className="social__item">
-            <a className="taxes__link taxes__link_to_tiktok" href="#"></a>
-          </li>
-        </ul>
-      </div>
     </section>
   )
 }

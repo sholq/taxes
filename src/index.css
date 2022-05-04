@@ -22,16 +22,8 @@
 @import url(blocks/output/__line/output__line.css);
 @import url(blocks/taxes/taxes.css);
 @import url(blocks/taxes/__list/taxes__list.css);
-@import url(blocks/taxes/__link/taxes__link.css);
-@import url(blocks/taxes/__link/_to/taxes__link_to_facebook.css);
-@import url(blocks/taxes/__link/_to/taxes__link_to_instagram.css);
-@import url(blocks/taxes/__link/_to/taxes__link_to_telegram.css);
-@import url(blocks/taxes/__link/_to/taxes__link_to_tiktok.css);
-@import url(blocks/taxes/__link/_to/taxes__link_to_vkontakte.css);
-@import url(blocks/taxes/__link/_to/taxes__link_to_youtube.css);
 @import url(blocks/social/social.css);
 @import url(blocks/main/__social/main__social.css);
-@import url(blocks/taxes/__social/taxes__social.css);
 @import url(blocks/social/__list/social__list.css);
 @import url(blocks/social/__item/social__item.css);
 @import url(blocks/social/__link/social__link.css);

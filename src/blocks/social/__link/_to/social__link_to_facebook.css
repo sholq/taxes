@@ -5,3 +5,9 @@
 .social__link_to_facebook:hover {
   background-image: url(../../../../image/facebook-hover.svg);
 }
+
+@media screen and (max-width: 750px) {
+  .social__link_to_facebook {
+    background-image: url(../../../../image/facebook-dark.svg);
+  }
+}

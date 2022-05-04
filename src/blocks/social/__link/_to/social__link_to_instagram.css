@@ -5,3 +5,9 @@
 .social__link_to_instagram:hover {
   background-image: url(../../../../image/instagram-hover.svg);
 }
+
+@media screen and (max-width: 750px) {
+  .social__link_to_instagram {
+    background-image: url(../../../../image/instagram-dark.svg);
+  }
+}

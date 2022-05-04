@@ -14,6 +14,8 @@
 
 @media screen and (max-width: 750px) {
   .taxes {
-    padding: 25px;
+    padding: 25px 25px 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
   }
 }

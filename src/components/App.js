@@ -10,15 +10,13 @@ import {throttle} from "../utils/throttle";
 function App() {
   const [isMobile, setIsMobile] = useState(false);
 
-  function handleFooterResize() {
-    throttle(() => {
-      if (window.innerWidth < 475) {
-        setIsMobile(true);
-      } else {
-        setIsMobile(false);
-      }
-    }, 150);
-  }
+  const handleFooterResize = throttle(() => {
+    if (window.innerWidth < 475) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+  }, 150);
 
   window.addEventListener('resize', handleFooterResize);
 

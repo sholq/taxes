@@ -17,7 +17,7 @@ function Main(props) {
             grossIncome={grossIncome}
           />
         </Route>
-        <Route path="/:amount">
+        <Route path="/amount$:amount">
           <Income
             setNetIncome={setNetIncome}
             netIncome={netIncome}

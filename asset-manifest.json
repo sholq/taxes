@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/taxes/static/css/main.39ce7199.css",
-    "main.js": "/taxes/static/js/main.fee10675.js",
+    "main.js": "/taxes/static/js/main.ae724907.js",
     "static/js/787.fa212a41.chunk.js": "/taxes/static/js/787.fa212a41.chunk.js",
     "static/media/opensans-800.woff?v=1.1.0": "/taxes/static/media/opensans-800.0a6577634617c9df782a.woff",
     "static/media/opensans-600.woff?v=1.1.0": "/taxes/static/media/opensans-600.fdf56b22f9fbdf2f583f.woff",
@@ -30,11 +30,11 @@
     "static/media/facebook.svg": "/taxes/static/media/facebook.aa1224c96878228d00d0.svg",
     "index.html": "/taxes/index.html",
     "main.39ce7199.css.map": "/taxes/static/css/main.39ce7199.css.map",
-    "main.fee10675.js.map": "/taxes/static/js/main.fee10675.js.map",
+    "main.ae724907.js.map": "/taxes/static/js/main.ae724907.js.map",
     "787.fa212a41.chunk.js.map": "/taxes/static/js/787.fa212a41.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.39ce7199.css",
-    "static/js/main.fee10675.js"
+    "static/js/main.ae724907.js"
   ]
 }

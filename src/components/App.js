@@ -53,7 +53,7 @@ function App() {
             taxesForFiveYear={taxesForFiveYear}
           />
         </Route>
-        <Route path="/amount$:amount">
+        <Route path="/amount=:amount">
           <Main
             setNetIncome={setNetIncome}
             netIncome={netIncome}

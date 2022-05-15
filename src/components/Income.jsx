@@ -11,8 +11,7 @@ const Income = memo(props => {
   }
 
   function renderNumber(value) {
-    const formattedString = Number(value.replace(/\D/g, '')).toLocaleString('nb-NO');
-    return formattedString;
+    return Number(value.replace(/\D/g, '')).toLocaleString('nb-NO');
   }
 
   function lockNaNKey(evt) {

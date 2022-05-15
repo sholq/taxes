@@ -5,3 +5,9 @@
 .social__link_to_vkontakte:hover {
   background-image: url(../../../../image/vk-hover.svg);
 }
+
+@media screen and (max-width: 750px) {
+  .social__link_to_vkontakte {
+    background-image: url(../../../../image/vk-dark.svg);
+  }
+}

@@ -5,3 +5,9 @@
 .social__link_to_telegram:hover {
   background-image: url(../../../../image/telegram-hover.svg);
 }
+
+@media screen and (max-width: 750px) {
+  .social__link_to_telegram {
+    background-image: url(../../../../image/telegram-dark.svg);
+  }
+}

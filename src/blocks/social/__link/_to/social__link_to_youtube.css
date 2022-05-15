@@ -5,3 +5,9 @@
 .social__link_to_youtube:hover {
   background-image: url(../../../../image/youtube-hover.svg);
 }
+
+@media screen and (max-width: 750px) {
+  .social__link_to_youtube {
+    background-image: url(../../../../image/youtube-dark.svg);
+  }
+}

@@ -1,4 +1,7 @@
-function Taxes(props) {
+import Output from "./Output";
+import {memo} from "react";
+
+const Taxes = memo(props => {
   const {taxesForMonth, taxesForYear, taxesForFiveYear} = props;
 
   return (
@@ -7,27 +10,24 @@ function Taxes(props) {
         <li className="container">
           <h2 className="container__title container__title_taxes">Налоги и сборы за месяц</h2>
           <label className="output output_place_taxes">
-            <output className="output__line output__line_type_taxes-month" name="taxes-month">{taxesForMonth}</output>
-            &nbsp;₽
+            <Output name="taxes-month" value={taxesForMonth}/>
           </label>
         </li>
         <li className="container">
           <h2 className="container__title container__title_taxes">За год</h2>
           <label className="output output_place_taxes">
-            <output className="output__line output__line_type_taxes-year" name="taxes-year">{taxesForYear}</output>
-            &nbsp;₽
+            <Output name="taxes-year" value={taxesForYear}/>
           </label>
         </li>
         <li className="container">
           <h2 className="container__title container__title_taxes">И за пять лет</h2>
           <label className="output output_place_taxes">
-            <output className="output__line output__line_type_taxes-five-year" name="taxes-five-year">{taxesForFiveYear}</output>
-            &nbsp;₽
+            <Output name="taxes-five-year" value={taxesForFiveYear}/>
           </label>
         </li>
       </ul>
     </section>
   )
-}
+});
 
 export default Taxes;

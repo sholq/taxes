@@ -1,5 +1,24 @@
-function Footer(props) {
-  const {isMobile} = props;
+import {memo, useEffect, useState} from "react";
+import {throttle} from "../utils/throttle";
+
+const Footer = memo(() => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  const handleFooterResize = throttle(() => {
+    if (window.innerWidth < 475) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+  }, 150);
+
+  useEffect(() => {
+    handleFooterResize();
+    document.addEventListener('resize', handleFooterResize);
+    return () => {
+      document.removeEventListener('resize', handleFooterResize);
+    }
+  }, [])
 
   return (
     <footer className="footer">
@@ -23,6 +42,6 @@ function Footer(props) {
       <a className="footer__link footer__link_type_donate">Поддержать проект</a>
     </footer>
   );
-}
+});
 
 export default Footer;

@@ -1,4 +1,6 @@
-function Social() {
+import {memo} from "react";
+
+const Social = memo(() =>{
   return (
     <section className="social main__social" aria-label="Секция репостов в социальные сети">
       <ul className="social__list">
@@ -23,6 +25,6 @@ function Social() {
       </ul>
     </section>
   )
-}
+});
 
 export default Social;

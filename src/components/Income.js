@@ -1,19 +1,9 @@
-import {useParams} from "react-router-dom";
-import {useEffect} from "react";
+import {memo} from "react";
+import Output from "./Output";
+import Input from "./Input";
 
-function Income(props) {
+const Income = memo(props => {
   const {setNetIncome, netIncome, grossIncome} = props;
-
-  let {amount} = useParams();
-
-  useEffect(() => {
-    if (amount && !isNaN(amount)) {
-      if (amount.length > 6) {
-        amount = amount.slice(0, 6);
-      }
-      setNetIncome(amount);
-    }
-  },[]);
 
   function inputOnChange(evt) {
     const income = evt.target.value.replace(/\D/g, '');
@@ -72,28 +62,23 @@ function Income(props) {
           <h2 className="container__title container__title_income">Ваша «чистая» зарплата — то, что приходит на
             карточку</h2>
           <label className="input input_place_income">
-            <input
-              className="input__line input__line_type_net-income"
-              type="text"
-              name="net-income"
-              placeholder="30 000"
-              autoComplete="off"
+            <Input
               value={renderNumber(netIncome + '')}
               onKeyDown={handleKeyDown}
               onKeyUp={handleKeyUp}
-              onChange={inputOnChange}/>₽
+              onChange={inputOnChange}
+            />
           </label>
         </li>
         <li className="container">
           <h2 className="container__title container__title_income">Ваша зарплата до уплаты налогов и сборов</h2>
           <label className="output output_place_income">
-            <output className="output__line output__line_type_gross-income" name="gross-income">{grossIncome}</output>
-            &nbsp;₽
+            <Output name="gross-income" value={grossIncome} />
           </label>
         </li>
       </ul>
     </section>
   )
-}
+});
 
 export default Income;

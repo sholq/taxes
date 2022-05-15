@@ -1,4 +1,6 @@
-function Description() {
+import {memo} from "react";
+
+const Description = memo(() => {
   return (
     <section className="description" aria-label="Описание проекта">
       <p className="description__paragraph">Некоторые люди считают, что экономика России держится исключительно на
@@ -9,6 +11,6 @@ function Description() {
         например, нефтяных компаний.</p>
     </section>
   )
-}
+});
 
 export default Description;

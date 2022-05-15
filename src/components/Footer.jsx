@@ -14,9 +14,9 @@ const Footer = memo(() => {
 
   useEffect(() => {
     handleFooterResize();
-    document.addEventListener('resize', handleFooterResize);
+    window.addEventListener('resize', handleFooterResize);
     return () => {
-      document.removeEventListener('resize', handleFooterResize);
+      window.removeEventListener('resize', handleFooterResize);
     }
   }, [])
 
@@ -28,18 +28,18 @@ const Footer = memo(() => {
           <p className="footer__copyright-paragraph">Сайт сделали <a className="footer__link" href="javascript:void(0)">Леонид Андрухов</a>,
           </p>
           <p className="footer__copyright-paragraph"><a className="footer__link" href="javascript:void(0)">Иван Сорокин</a> и <a
-            className="footer__link" href="https://github.com/sholq" target="_blank">Семён Силкин</a></p>
+            className="footer__link" href="https://github.com/sholq" target="_blank" rel="noreferrer">Семён Силкин</a></p>
           <p className="footer__copyright-paragraph">на чистом энтузиазме, а вы можете</p>
         </div>
       ) : (
         <div className="footer__copyright-text first-template">
           <p className="footer__copyright-paragraph">Сайт сделали <a className="footer__link" href="javascript:void(0)">Леонид
             Андрухов</a>, <a className="footer__link" href="javascript:void(0)">Иван Сорокин</a></p>
-          <p className="footer__copyright-paragraph">и <a className="footer__link" href="https://github.com/sholq" target="_blank">Семён Силкин</a> на чистом
+          <p className="footer__copyright-paragraph">и <a className="footer__link" href="https://github.com/sholq" target="_blank" rel="noreferrer">Семён Силкин</a> на чистом
             энтузиазме, а вы можете</p>
         </div>
       )}
-      <a className="footer__link footer__link_type_donate">Поддержать проект</a>
+      <a className="footer__link footer__link_type_donate" href="#">Поддержать проект</a>
     </footer>
   );
 });

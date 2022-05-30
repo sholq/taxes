@@ -1,4 +1,4 @@
-# Проект: Налоги
+# Проект: Налоги / Project: Taxes
 
 <img alt="Version" src="https://img.shields.io/badge/version-0.0.2-blue.svg?cacheSeconds=2592000" />
 
@@ -8,32 +8,32 @@
 Но ведь это совсем не так! Бюджет страны в основном наполняется налогами граждан — таких как ты или я.
 Мы сделали этот сайт, чтобы каждый мог наглядно увидеть свой личный вклад в бюджет страны и сравнить его с вкладом, например, нефтяных компаний.
 
-В ветке main представлена демо версия проекта.
+Some people think that Russia's economy is based solely on revenues from oil, gas, timber, aluminum, and nickel. But that's not true at all! The country's budget is largely filled by taxes paid by citizens like you and me. We made this site so that everyone could clearly see their personal contribution to the country's budget and compare it to the contribution, for example, of oil companies.
 
-## Авторы
+## Авторы / Contributors
 Иван Сорокин
 
-Леонид Андрухов - дизайн
+Леонид Андрухов - дизайн / layout
 
-Силкин Семён - фронтенд
+Силкин Семён - фронтенд / frontend
 
-## Стек технологий
+## Стек технологий / Technology stack
 
 <img alt="html5" src="https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" /> <img alt="CSS3" src="https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3" /> <img alt="JavaScript" src="https://img.shields.io/badge/-JavaScript-yellow?style=flat-square&logo=javascript" /> <img alt="React" src="https://img.shields.io/badge/-React-45b8d8?style=flat-square&logo=react&logoColor=white" />
 
 ## GitPages
 
-[Ссылка](https://sholq.github.io/taxes/)
+[Ссылка / Link](https://sholq.github.io/taxes/)
 
 ## Планы
 
 - Добавить возможность репоста в социальные сети
 
-## Установка
+## Установка / Installation
 
 ### `npm install`
 
-## Использование
+## Использование / Usage
 
 In the project directory, you can run:
 
